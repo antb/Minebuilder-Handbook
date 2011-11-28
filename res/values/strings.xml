@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Minebuilder Handbook</string>
+	<string name="about">MineBuilder Handbook\n\tVersion 2.0\n\t© Anthony Boot 2011\n\nMinebuilder and graphics\n\t© Bram Buurlage + Alex Graphmaster 2011\n\nAll graphics are used with permission.\n\nAll available items in game are displayed here, even if they are not craftable.\nThis is so users with modifications to the game can easily find the ID of an item they want to use in a recipe or otherwise modify.\n\n--Bugs/suggestions?--\nDrop a message for Xenoxis on the Minebuilder Forums.\nhttp://minebuilder.org/\n\nIf you want to share this app with your friends, help me out and use this link:\nhttp://adf.ly/3Dxgr\n\nThanks :)</string>
+	<string-array name="crafted_items">
+		<item>Brick</item>
+		<item>Bucket</item>
+		<item>Bucket (Lava)</item>
+		<item>Bucket (Water)</item>
+		<item>Chest</item>
+		<item>Cobblestone</item>
+		<item>Crystal</item>
+		<item>Dirt</item>
+		<item>Door</item>
+		<item>Elevator</item>
+		<item>Fire 1</item>
+		<item>Fire 8</item>
+		<item>Glass</item>
+		<item>Gold Bar</item>
+		<item>Gold Block</item>
+		<item>Gravel</item>
+		<item>Iron Bar</item>
+		<item>Iron Block</item>
+		<item>Ladder</item>
+		<item>Lapiz</item>
+		<item>Lapiz Ore</item>
+		<item>Leaves</item>
+		<item>Obsidian</item>
+		<item>Plain Stone</item>
+		<item>Planks</item>
+		<item>Sand</item>
+		<item>Sandstone</item>
+		<item>Sapling</item>
+		<item>Sign</item>
+		<item>Stick</item>
+		<item>Stone Slab</item>
+		<item>Torch</item>
+		<item>Workbench</item>
+		<item>Wooden Axe</item>
+		<item>Stone Axe</item>
+		<item>Iron Axe</item>
+		<item>Golden Axe</item>
+		<item>Diamond Axe</item>
+		<item>Wooden Hoe</item>
+		<item>Stone Hoe</item>
+		<item>Iron Hoe</item>
+		<item>Golden Hoe</item>
+		<item>Diamond Hoe</item>
+		<item>Wooden Pickaxe</item>
+		<item>Stone Pickaxe</item>
+		<item>Iron Pickaxe</item>
+		<item>Golden Pickaxe</item>
+		<item>Diamond Pickaxe</item>
+		<item>Wooden Shovel</item>
+		<item>Stone Shovel</item>
+		<item>Iron Shovel</item>
+		<item>Golden Shovel</item>
+		<item>Diamond Shovel</item>
+		<item>Wooden Sword</item>
+		<item>Stone Sword</item>
+		<item>Iron Sword</item>
+		<item>Golden Sword</item>
+		<item>Diamond Sword</item>
+	</string-array>
+	<string name="no_id">No handler found for this item\nThis is a bug and
+		you should report it.
+	</string>
+	<string name="menu_top">Select item to craft from list.</string>
+	<string name="id">ID: </string>
+	<string name="aboutbox">About</string>
+	<string name="ForceClose">There isn\'t a display mode set for your phone.
+		Contact XenoXis on the Minebuilder Forums.</string>
+</resources>

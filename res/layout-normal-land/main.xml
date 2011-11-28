@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_area"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_area"
+        android:layout_width="290dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_area" >
+
+        <TextView
+            android:id="@+id/menu_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/menu_top"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/dropbox_items"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_title"
+            android:layout_centerHorizontal="true"
+            android:prompt="@+string/menu_top" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dropbox_items"
+            android:layout_centerHorizontal="true" >
+
+            <TableRow
+                android:layout_width="140dp"
+                android:layout_height="70dp" >
+
+                <ImageView
+                    android:id="@+id/crafted_item"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    android:background="#000000" />
+                <TextView
+                    android:id="@+id/mb_id"
+                    android:text="ID"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" 
+            android:layout_centerHorizontal="true">
+
+            <TableRow >
+
+                <Button
+                    android:id="@+id/about"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aboutbox" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/craftcube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_area"
+        android:layout_toRightOf="@+id/menu_area" >
+
+        <TableRow
+            android:id="@+id/CraftRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#C0C0C0" >
+
+            <ImageView
+                android:id="@+id/B1x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B2x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B3x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CraftRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CraftRow1"
+            android:background="#C0C0C0" >
+
+            <ImageView
+                android:id="@+id/B1x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B2x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B3x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CraftRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CraftRow2"
+            android:background="#C0C0C0" >
+
+            <ImageView
+                android:id="@+id/B1x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B2x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B3x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/craftcube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_area"
+        android:layout_toRightOf="@+id/menu_area" >
+
+        <TableRow
+            android:id="@+id/CraftRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#C0C0C0" >
+
+            <ImageView
+                android:id="@+id/B1x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B2x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B3x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CraftRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CraftRow1"
+            android:background="#C0C0C0" >
+
+            <ImageView
+                android:id="@+id/B1x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B2x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B3x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/CraftRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CraftRow2"
+            android:background="#C0C0C0" >
+
+            <ImageView
+                android:id="@+id/B1x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B2x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+
+            <ImageView
+                android:id="@+id/B3x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:background="#000000" />
+        </TableRow>
+    </TableLayout>
+        
+</RelativeLayout>
