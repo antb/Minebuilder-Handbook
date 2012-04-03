@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Minebuilder Handbook</string>
-	<string name="about">MineBuilder Handbook\n\tVersion 2.0\n\t© Anthony Boot 2011\n\nMinebuilder and graphics\n\t© Bram Buurlage + Alex Graphmaster 2011\n\nAll graphics are used with permission.\n\nAll available items in game are displayed here, even if they are not craftable.\nThis is so users with modifications to the game can easily find the ID of an item they want to use in a recipe or otherwise modify.\n\n--Bugs/suggestions?--\nDrop a message for Xenoxis on the Minebuilder Forums.\nhttp://minebuilder.org/\n\nIf you want to share this app with your friends, help me out and use this link:\nhttp://adf.ly/3Dxgr\n\nThanks :)</string>
+	<string name="about">MineBuilder Handbook\n\tVersion 3-preview\n\tSource code licenced under CC-SA-NC UKv2\n\nMinebuilder and graphics\n\t© Space Walrus Productions 2012\n\nAll graphics are used with permission.\n\nAll available items in game are displayed here, even if they are not craftable.\nThis is so users with modifications to the game can easily find the ID of an item they want to use in a recipe or otherwise modify.\n\n&#8212;Bugs/suggestions?&#8212;\nDrop a message for Xenoxis on the Minebuilder Forums.\nhttp://minebuilder.freeforums.org/</string>
 	<string-array name="crafted_items">
 		<item>Brick</item>
 		<item>Bucket</item>
 		<item>Bucket (Lava)</item>
 		<item>Bucket (Water)</item>
 		<item>Chest</item>
+		<item>Coal</item>
+		<item>Coal Ore</item>
 		<item>Cobblestone</item>
-		<item>Crystal</item>
+		<item>Diamond</item>
+		<item>Diamond Block</item>
+		<item>Diamond Ore</item>
 		<item>Dirt</item>
 		<item>Door</item>
 		<item>Elevator</item>
@@ -18,9 +22,11 @@
 		<item>Glass</item>
 		<item>Gold Bar</item>
 		<item>Gold Block</item>
+		<item>Gold Ore</item>
 		<item>Gravel</item>
 		<item>Iron Bar</item>
 		<item>Iron Block</item>
+		<item>Iron Ore</item>
 		<item>Ladder</item>
 		<item>Lapiz</item>
 		<item>Lapiz Ore</item>
@@ -34,7 +40,9 @@
 		<item>Sign</item>
 		<item>Stick</item>
 		<item>Stone Slab</item>
+		<item>TNT</item>
 		<item>Torch</item>
+		<item>Tree</item>
 		<item>Workbench</item>
 		<item>Wooden Axe</item>
 		<item>Stone Axe</item>

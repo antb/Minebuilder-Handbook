@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.xenoxis.minebuilderhandbook" android:versionCode="5"
-	android:versionName="2">
-	<uses-sdk android:minSdkVersion="7" />
+	package="com.xenoxis.minebuilderhandbook" android:versionCode="6"
+	android:versionName="3-preview">
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>
+	<supports-screens android:resizeable="true" android:anyDensity="true"/>
 
-	<application android:icon="@drawable/icon" android:label="@string/app_name"
-		android:debuggable="false">
+	<application android:icon="@drawable/icon" android:label="@string/app_name" android:persistent="false">
 		<activity android:name=".MinebuilderHandbookActivity"
 			android:label="@string/app_name">
 			<intent-filter>

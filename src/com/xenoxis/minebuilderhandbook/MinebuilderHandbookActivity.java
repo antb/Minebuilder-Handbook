@@ -35,14 +35,12 @@ public class MinebuilderHandbookActivity extends Activity {
 
 		final Button aboutButton = (Button) findViewById(R.id.about);
 		aboutButton.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				AlertDialog aboutBox = new AlertDialog.Builder(
 						MinebuilderHandbookActivity.this).create();
 				aboutBox.setTitle("About...");
 				aboutBox.setMessage(getString(R.string.about));
 				aboutBox.setButton("OK", new DialogInterface.OnClickListener() {
-					@Override
 					public void onClick(DialogInterface dialog, int which) {
 
 					}
@@ -54,7 +52,6 @@ public class MinebuilderHandbookActivity extends Activity {
 
 	public class showHowTo implements OnItemSelectedListener {
 
-		@Override
 		public void onItemSelected(AdapterView<?> parent, View view, int pos,
 				long id) {
 
@@ -85,6 +82,18 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
 
+			else if (itemToMake.equals("Coal"))
+				changeBox(263, R.drawable.item_coal, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
+			else if (itemToMake.equals("Coal Ore"))
+				changeBox(16, R.drawable.block_coal_ore, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if (itemToMake.equals("Chest"))
 				changeBox(54, R.drawable.block_chest, R.drawable.block_planks,
 						R.drawable.block_planks, R.drawable.block_planks,
@@ -98,8 +107,20 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
 
-			else if (itemToMake.equals("Crystal"))
-				changeBox(57, R.drawable.blank, R.drawable.blank,
+			else if (itemToMake.equals("Diamond"))
+				changeBox(264, R.drawable.item_diamond, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+	
+			else if (itemToMake.equals("Diamond Block"))
+				changeBox(57, R.drawable.block_diamond, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
+			else if (itemToMake.equals("Diamond Ore"))
+				changeBox(56, R.drawable.block_diamond_ore, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
@@ -168,6 +189,13 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_gold_bar, R.drawable.item_gold_bar,
 						R.drawable.item_gold_bar, R.drawable.item_gold_bar,
 						R.drawable.item_gold_bar, R.drawable.item_gold_bar);
+			
+			else if (itemToMake.equals("Gold Ore"))
+				changeBox(32, R.drawable.block_gold_ore, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank,
+						R.drawable.blank);
 
 			else if (itemToMake.equals("Gravel"))
 				changeBox(13, R.drawable.block_gravel, R.drawable.blank,
@@ -190,7 +218,7 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_iron_bar, R.drawable.item_iron_bar);
 
 			else if (itemToMake.equals("Ladder"))
-				changeBox(65, R.drawable.block_ladder, R.drawable.item_stick,
+				changeBox(65, R.drawable.item_ladder, R.drawable.item_stick,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.item_stick, R.drawable.item_stick,
 						R.drawable.item_stick, R.drawable.item_stick,
@@ -249,13 +277,13 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank, R.drawable.blank);
 
 			else if (itemToMake.equals("Sapling"))
-				changeBox(6, R.drawable.block_sapling, R.drawable.blank,
+				changeBox(6, R.drawable.item_sapling, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
 
 			else if (itemToMake.equals("Sign"))
-				changeBox(63, R.drawable.block_sign, R.drawable.block_planks,
+				changeBox(63, R.drawable.item_sign, R.drawable.block_planks,
 						R.drawable.block_planks, R.drawable.block_planks,
 						R.drawable.block_planks, R.drawable.block_planks,
 						R.drawable.block_planks, R.drawable.blank,
@@ -275,7 +303,13 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.block_cobblestone,
 						R.drawable.block_cobblestone, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
-
+			
+			else if (itemToMake.equals("TNT"))
+				changeBox(49,R.drawable.block_tnt,
+						R.drawable.item_gunpowder,R.drawable.item_gunpowder,R.drawable.blank,
+						R.drawable.item_gunpowder,R.drawable.item_gunpowder,R.drawable.blank,
+						R.drawable.blank,R.drawable.blank,R.drawable.blank);
+						
 			else if (itemToMake.equals("Torch"))
 				changeBox(50, R.drawable.item_torch, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
@@ -289,7 +323,7 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.block_planks,
 						R.drawable.block_planks, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank);
-
+/*Tools*/
 			else if (itemToMake.equals("Wooden Axe"))
 				changeBox(271, R.drawable.item_wooden_axe,
 						R.drawable.block_planks, R.drawable.block_planks,
@@ -375,6 +409,7 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_stick, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank);
+			
 			else if (itemToMake.equals("Iron Pickaxe"))
 				changeBox(257, R.drawable.item_iron_pickaxe,
 						R.drawable.item_iron_bar, R.drawable.item_iron_bar,
@@ -382,6 +417,7 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_stick, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank);
+			
 			else if (itemToMake.equals("Golden Pickaxe"))
 				changeBox(285, R.drawable.item_gold_pickaxe,
 						R.drawable.item_gold_bar, R.drawable.item_gold_bar,
@@ -389,6 +425,7 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_stick, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank);
+			
 			else if (itemToMake.equals("Diamond Pickaxe"))
 				changeBox(278, R.drawable.item_diamond_pickaxe,
 						R.drawable.item_diamond, R.drawable.item_diamond,
@@ -396,24 +433,28 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_stick, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank);
+			
 			else if (itemToMake.equals("Wooden Shovel"))
 				changeBox(269, R.drawable.item_wooden_shovel, R.drawable.blank,
 						R.drawable.block_planks, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank, R.drawable.blank,
 						R.drawable.item_stick, R.drawable.blank);
+			
 			else if (itemToMake.equals("Stone Shovel"))
 				changeBox(273, R.drawable.item_stone_shovel, R.drawable.blank,
 						R.drawable.block_cobblestone, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank, R.drawable.blank,
 						R.drawable.item_stick, R.drawable.blank);
+			
 			else if (itemToMake.equals("Iron Shovel"))
 				changeBox(256, R.drawable.item_iron_shovel, R.drawable.blank,
 						R.drawable.item_iron_bar, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank, R.drawable.blank,
 						R.drawable.item_stick, R.drawable.blank);
+			
 			else if (itemToMake.equals("Golden Shovel"))
 				changeBox(284, R.drawable.item_gold_shovel, R.drawable.blank,
 						R.drawable.item_gold_bar, R.drawable.blank,
@@ -499,7 +540,6 @@ public class MinebuilderHandbookActivity extends Activity {
 			t9.setImageResource(id9);
 		}
 
-		@Override
 		public void onNothingSelected(AdapterView<?> xyz) {
 			// No non-selection option
 		}
