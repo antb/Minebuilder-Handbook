@@ -70,7 +70,7 @@
                     android:background="#000000" />
                 <TextView
                     android:id="@+id/mb_id"
-                    android:text="ID"
+                    android:text="@string/ID"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:layout_gravity="center" />
@@ -133,7 +133,6 @@
             android:id="@+id/CraftRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/CraftRow1"
             android:background="#C0C0C0" >
 
             <ImageView
@@ -162,7 +161,6 @@
             android:id="@+id/CraftRow3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/CraftRow2"
             android:background="#C0C0C0" >
 
             <ImageView
@@ -187,98 +185,6 @@
                 android:background="#000000" />
         </TableRow>
     </TableLayout>
-    <TableLayout
-        android:id="@+id/craftcube"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title_area"
-        android:layout_toRightOf="@+id/menu_area" >
-
-        <TableRow
-            android:id="@+id/CraftRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#C0C0C0" >
-
-            <ImageView
-                android:id="@+id/B1x1"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-
-            <ImageView
-                android:id="@+id/B2x1"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-
-            <ImageView
-                android:id="@+id/B3x1"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/CraftRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/CraftRow1"
-            android:background="#C0C0C0" >
-
-            <ImageView
-                android:id="@+id/B1x2"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-
-            <ImageView
-                android:id="@+id/B2x2"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-
-            <ImageView
-                android:id="@+id/B3x2"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/CraftRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/CraftRow2"
-            android:background="#C0C0C0" >
-
-            <ImageView
-                android:id="@+id/B1x3"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-
-            <ImageView
-                android:id="@+id/B2x3"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-
-            <ImageView
-                android:id="@+id/B3x3"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_margin="1dp"
-                android:background="#000000" />
-        </TableRow>
-    </TableLayout>
+ 
         
 </RelativeLayout>

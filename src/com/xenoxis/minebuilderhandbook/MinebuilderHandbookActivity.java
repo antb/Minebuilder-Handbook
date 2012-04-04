@@ -56,8 +56,13 @@ public class MinebuilderHandbookActivity extends Activity {
 				long id) {
 
 			String itemToMake = parent.getItemAtPosition(pos).toString();
-
-			if (itemToMake.equals("Brick"))
+			if (itemToMake.equals("Bedrock"))
+				changeBox(7,R.drawable.block_bedrock, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
+			else if (itemToMake.equals("Brick"))
 				changeBox(45, R.drawable.block_brick, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
@@ -82,6 +87,12 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
 
+			else if (itemToMake.equals("Carrot"))
+				changeBox(103, R.drawable.item_carrot,  R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if (itemToMake.equals("Coal"))
 				changeBox(263, R.drawable.item_coal, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
@@ -191,12 +202,18 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_gold_bar, R.drawable.item_gold_bar);
 			
 			else if (itemToMake.equals("Gold Ore"))
-				changeBox(32, R.drawable.block_gold_ore, R.drawable.blank,
+				changeBox(14, R.drawable.block_gold_ore, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank,
 						R.drawable.blank);
 
+			else if (itemToMake.equals("Hide"))
+				changeBox(402, R.drawable.item_hide, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if (itemToMake.equals("Gravel"))
 				changeBox(13, R.drawable.block_gravel, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
@@ -217,6 +234,12 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_iron_bar, R.drawable.item_iron_bar,
 						R.drawable.item_iron_bar, R.drawable.item_iron_bar);
 
+			else if (itemToMake.equals("Iron Ore"))
+				changeBox(15, R.drawable.block_iron_ore, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if (itemToMake.equals("Ladder"))
 				changeBox(65, R.drawable.item_ladder, R.drawable.item_stick,
 						R.drawable.blank, R.drawable.item_stick,
@@ -235,9 +258,15 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
-
+			
+			else if (itemToMake.equals("Lava"))
+				changeBox(10, R.drawable.block_lava, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if (itemToMake.equals("Leaves"))
-				changeBox(23, R.drawable.block_leaves, R.drawable.blank,
+				changeBox(18, R.drawable.block_leaves, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank);
@@ -262,7 +291,13 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
 						R.drawable.block_wood, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank);
-
+			
+			else if (itemToMake.equals("Potion"))
+				changeBox(403,R.drawable.item_potion, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if(itemToMake.equals("Sand"))
 				changeBox(12, R.drawable.block_sand,R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank,
@@ -305,9 +340,9 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.blank, R.drawable.blank);
 			
 			else if (itemToMake.equals("TNT"))
-				changeBox(49,R.drawable.block_tnt,
-						R.drawable.item_gunpowder,R.drawable.item_gunpowder,R.drawable.blank,
-						R.drawable.item_gunpowder,R.drawable.item_gunpowder,R.drawable.blank,
+				changeBox(46,R.drawable.block_tnt,
+						R.drawable.item_sulphur,R.drawable.item_sulphur,R.drawable.blank,
+						R.drawable.item_sulphur,R.drawable.item_sulphur,R.drawable.blank,
 						R.drawable.blank,R.drawable.blank,R.drawable.blank);
 						
 			else if (itemToMake.equals("Torch"))
@@ -316,13 +351,25 @@ public class MinebuilderHandbookActivity extends Activity {
 						R.drawable.item_coal, R.drawable.blank,
 						R.drawable.blank, R.drawable.item_stick,
 						R.drawable.blank);
-
+			
+			else if (itemToMake.equals("Water"))
+				changeBox(8,R.drawable.block_water, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
+			
 			else if (itemToMake.equals("Workbench"))
 				changeBox(58, R.drawable.block_workbench,
 						R.drawable.block_planks, R.drawable.block_planks,
 						R.drawable.blank, R.drawable.block_planks,
 						R.drawable.block_planks, R.drawable.blank,
 						R.drawable.blank, R.drawable.blank, R.drawable.blank);
+			
+			else if (itemToMake.equals("Wood"))
+				changeBox(17, R.drawable.block_wood, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
 /*Tools*/
 			else if (itemToMake.equals("Wooden Axe"))
 				changeBox(271, R.drawable.item_wooden_axe,
@@ -502,6 +549,11 @@ public class MinebuilderHandbookActivity extends Activity {
 				Toast toast = Toast.makeText(getApplicationContext(),
 						R.string.no_id, Toast.LENGTH_SHORT);
 				toast.show();
+				changeBox(0, R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank,
+						R.drawable.blank, R.drawable.blank);
 			}
 		}
 
@@ -514,7 +566,7 @@ public class MinebuilderHandbookActivity extends Activity {
 			Log.i(TAG, "id 7 8 9: " + id7 + " " + id8 + " " + id9);
 
 			TextView SetID = (TextView) findViewById(R.id.mb_id);
-			SetID.setText(R.string.id);
+			SetID.setText(R.string.ID);
 			//SetID.append("\n");
 			SetID.append(Integer.toString(gid));
 

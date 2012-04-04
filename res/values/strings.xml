@@ -3,6 +3,7 @@
 	<string name="app_name">Minebuilder Handbook</string>
 	<string name="about">MineBuilder Handbook\n\tVersion 3-preview\n\tSource code licenced under CC-SA-NC UKv2\n\nMinebuilder and graphics\n\t© Space Walrus Productions 2012\n\nAll graphics are used with permission.\n\nAll available items in game are displayed here, even if they are not craftable.\nThis is so users with modifications to the game can easily find the ID of an item they want to use in a recipe or otherwise modify.\n\n&#8212;Bugs/suggestions?&#8212;\nDrop a message for Xenoxis on the Minebuilder Forums.\nhttp://minebuilder.freeforums.org/</string>
 	<string-array name="crafted_items">
+	    <item>Bedrock</item>
 		<item>Brick</item>
 		<item>Bucket</item>
 		<item>Bucket (Lava)</item>
@@ -24,26 +25,33 @@
 		<item>Gold Block</item>
 		<item>Gold Ore</item>
 		<item>Gravel</item>
+		<item>Hide</item>
 		<item>Iron Bar</item>
 		<item>Iron Block</item>
 		<item>Iron Ore</item>
 		<item>Ladder</item>
 		<item>Lapiz</item>
 		<item>Lapiz Ore</item>
+		<item>Lava</item>
 		<item>Leaves</item>
 		<item>Obsidian</item>
 		<item>Plain Stone</item>
 		<item>Planks</item>
+		<item>Potion</item>
 		<item>Sand</item>
 		<item>Sandstone</item>
 		<item>Sapling</item>
 		<item>Sign</item>
 		<item>Stick</item>
 		<item>Stone Slab</item>
+		<item>Sulphur</item>
 		<item>TNT</item>
 		<item>Torch</item>
 		<item>Tree</item>
+		<item>Water</item>
+		<item>Wood</item>
 		<item>Workbench</item>
+		
 		<item>Wooden Axe</item>
 		<item>Stone Axe</item>
 		<item>Iron Axe</item>
@@ -74,7 +82,7 @@
 		you should report it.
 	</string>
 	<string name="menu_top">Select item to craft from list.</string>
-	<string name="id">ID: </string>
+	<string name="ID">ID: </string>
 	<string name="aboutbox">About</string>
 	<string name="ForceClose">There isn\'t a display mode set for your phone.
 		Contact XenoXis on the Minebuilder Forums.</string>
